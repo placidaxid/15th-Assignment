@@ -1,0 +1,229 @@
+.logo-image{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    background-color: #0a054d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-weight: bolder;
+}
+
+.navbar .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #1eec1e;
+}
+
+.navbar .navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+}
+/* the links on the nav will not have any style eg bullets */
+.navbar .navbar-nav .nav-items{
+    list-style: none;
+}
+.navbar .navbar-nav .nav-items .nav-links{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+
+.navbar .navbar-nav .nav-items-dropdown{
+    position: relative;
+    /*background-color: yellow;*/
+}
+.navbar .navbar-nav .nav-items .dropdown-items{
+    width: 200px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    top: 69px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+   
+}
+
+.navbar .navbar-nav .nav-items .dropdown-items .dropdown-items1{
+    width: 200px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    top: 105px;
+    left: 200px;
+    display: none;
+  
+}
+
+/*
+.nav-links .nav-items .dropdown:hover > .dropdown-items{
+    background-color: violet;
+}
+
+*/
+/* for hover on the links*/
+.navbar .navbar-nav .nav-items a:hover{
+    display: block;
+}
+.navbar .navbar-nav .nav-items.dropdown .nav-links a:hover{
+    display: block;
+    background-color: rgb(245, 23, 23);
+}
+
+.navbar .navbar-nav .nav-items .dropdown-items li{
+    background-color: #0a054d;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav .nav-items .dropdown-items1 li{
+    background-color: hsl(78, 93%, 49%);
+    padding: 15px 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav .nav-items .dropdown-items li:hover{
+    background-color: #1eec1e;
+    cursor: pointer;
+}
+.navbar .navbar-nav .nav-items .dropdown-items1 li:hover{
+    background-color: #1eec1e;
+    cursor: pointer;
+}
+/*IMAGE STYLING*/
+.wrapper{
+    
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper img{
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+/*GRID*/
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+h3{
+    text-align: center;
+    padding-right: 400px;
+    background-color: green;
+}
+h5{
+    float: right;
+    background-color: red;
+}
+.mt-4 {
+    margin-top: 1.5rem!important;}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+}
+.themed-grid-col {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(235, 232, 240, 0.692);
+    border: 1px solid rgba(86, 61, 124, .2);
+    width: 40%;
+  }
+  
+  .themed-container {
+    padding: .75rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+  }
+  
+
+
+
+
+/* sidebars*/
+
+  
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  .leftside {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  .leftside2 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
